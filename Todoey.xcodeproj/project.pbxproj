@@ -13,8 +13,9 @@
 		E62B47AE20979D7700A55923 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E62B47AC20979D7700A55923 /* Main.storyboard */; };
 		E62B47B020979D8F00A55923 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E62B47AF20979D8F00A55923 /* Assets.xcassets */; };
 		E62B47B320979D8F00A55923 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E62B47B120979D8F00A55923 /* LaunchScreen.storyboard */; };
-		E62B47C2209A156200A55923 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E62B47C0209A156200A55923 /* DataModel.xcdatamodeld */; };
 		E62B47E5209A42BA00A55923 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62B47E4209A42BA00A55923 /* CategoryViewController.swift */; };
+		E62B47E9209A8C5E00A55923 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62B47E8209A8C5E00A55923 /* Item.swift */; };
+		E62B47EB209A8C7100A55923 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62B47EA209A8C7100A55923 /* Category.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,8 +29,9 @@
 		E62B47AF20979D8F00A55923 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E62B47B220979D8F00A55923 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E62B47B420979D8F00A55923 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E62B47C1209A156200A55923 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
 		E62B47E4209A42BA00A55923 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		E62B47E8209A8C5E00A55923 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		E62B47EA209A8C7100A55923 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,7 +114,8 @@
 		E62B47BE2098EFDD00A55923 /* Data Model */ = {
 			isa = PBXGroup;
 			children = (
-				E62B47C0209A156200A55923 /* DataModel.xcdatamodeld */,
+				E62B47E8209A8C5E00A55923 /* Item.swift */,
+				E62B47EA209A8C7100A55923 /* Category.swift */,
 			);
 			path = "Data Model";
 			sourceTree = "<group>";
@@ -240,10 +243,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E62B47E9209A8C5E00A55923 /* Item.swift in Sources */,
 				E62B47E5209A42BA00A55923 /* CategoryViewController.swift in Sources */,
 				E62B47AB20979D7700A55923 /* TodoListViewController.swift in Sources */,
-				E62B47C2209A156200A55923 /* DataModel.xcdatamodeld in Sources */,
 				E62B47A920979D7700A55923 /* AppDelegate.swift in Sources */,
+				E62B47EB209A8C7100A55923 /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -391,7 +395,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q358MA3A7G;
 				INFOPLIST_FILE = Todoey/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mindisc.Todoey;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -407,7 +414,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q358MA3A7G;
 				INFOPLIST_FILE = Todoey/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mindisc.Todoey;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -437,19 +447,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		E62B47C0209A156200A55923 /* DataModel.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				E62B47C1209A156200A55923 /* DataModel.xcdatamodel */,
-			);
-			currentVersion = E62B47C1209A156200A55923 /* DataModel.xcdatamodel */;
-			path = DataModel.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = E62B479D20979D7700A55923 /* Project object */;
 }
